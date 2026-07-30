@@ -1,66 +1,216 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🌐 SI Desa - Smart Village Ecosystem
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="public/logo.png" alt="SI Desa Logo" width="150">
 </p>
 
-## About Laravel
+<p align="center">
+  <b>Sistem Informasi Desa Berbasis Web</b><br>
+  Digitalisasi Pelayanan Publik Desa menggunakan Laravel
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 📖 Tentang Project
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+SI Desa (Smart Village Ecosystem) merupakan aplikasi berbasis web yang dirancang untuk mendukung digitalisasi pelayanan publik di lingkungan desa. Sistem ini menyediakan layanan administrasi secara online, pengelolaan pengaduan masyarakat, transparansi APBDes, publikasi berita desa, informasi UMKM, data kependudukan, serta fitur tracking permohonan layanan.
 
-## Learning Laravel
+Project ini dikembangkan sebagai implementasi hasil **Kerja Praktik** pada **Dinas Komunikasi dan Informatika Kabupaten Tapanuli Tengah**.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## ✨ Fitur Utama
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 👥 Sistem Warga
 
-## Laravel Sponsors
+- 🏠 Beranda
+- 📄 Katalog Layanan
+- 📝 Pengajuan Permohonan Layanan
+- 📦 Tracking Status Permohonan
+- 📢 Pengaduan Masyarakat
+- 📰 Berita Desa
+- 💰 Transparansi APBDes
+- 👨‍👩‍👧 Data Kependudukan
+- 🏪 Direktori UMKM
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 🔐 Sistem Admin
 
-### Premium Partners
+- Dashboard Monitoring
+- Kelola Layanan
+- Kelola Permohonan
+- Kelola Tracking
+- Kelola Pengaduan
+- Kelola APBDes
+- Kelola Berita
+- Kelola Penduduk
+- Kelola UMKM
+- Statistik Dashboard
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+---
 
-## Contributing
+## 🛠️ Tech Stack
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+| Technology | Version |
+|------------|---------|
+| PHP | 8.2+ |
+| Laravel | 12 |
+| MySQL | 8.x |
+| Tailwind CSS | Latest |
+| JavaScript | ES6 |
+| Chart.js | Latest |
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 📂 Struktur Folder
 
-## Security Vulnerabilities
+```
+app/
+bootstrap/
+config/
+database/
+public/
+resources/
+routes/
+storage/
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 🚀 Instalasi
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Clone Repository
+
+```bash
+git clone https://github.com/USERNAME/si_desa.git
+```
+
+Masuk ke folder project
+
+```bash
+cd si_desa
+```
+
+Install dependency
+
+```bash
+composer install
+```
+
+Install Node Module
+
+```bash
+npm install
+```
+
+Copy file environment
+
+```bash
+cp .env.example .env
+```
+
+Generate application key
+
+```bash
+php artisan key:generate
+```
+
+Atur konfigurasi database pada file `.env`
+
+```env
+DB_DATABASE=si_desa
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Migrasi database
+
+```bash
+php artisan migrate
+```
+
+Jika menggunakan seeder
+
+```bash
+php artisan db:seed
+```
+
+Compile Asset
+
+```bash
+npm run dev
+```
+
+Jalankan server
+
+```bash
+php artisan serve
+```
+
+Buka browser
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## 📸 Screenshot
+
+### Landing Page
+
+> Tambahkan screenshot homepage
+
+### Dashboard Admin
+
+> Tambahkan screenshot dashboard
+
+### Manajemen APBDes
+
+> Tambahkan screenshot APBDes
+
+### Tracking Layanan
+
+> Tambahkan screenshot tracking
+
+---
+
+## 🧪 Pengujian
+
+Metode pengujian yang digunakan adalah:
+
+- Black Box Testing
+
+Seluruh fitur utama berhasil dijalankan sesuai kebutuhan sistem.
+
+---
+
+## 📚 Dokumentasi Sistem
+
+Sistem terdiri dari beberapa modul utama:
+
+- Layanan Administrasi
+- Tracking Permohonan
+- Pengaduan Masyarakat
+- APBDes
+- Berita Desa
+- Penduduk
+- UMKM
+- Dashboard Monitoring
+
+---
+
+## 👨‍💻 Author
+
+**Nabil Abdillah Supardy**
+
+Program Studi Sistem Informasi
+
+Universitas Islam Negeri Imam Bonjol Padang
+
+---
+
+## 📄 License
+
+Project ini dikembangkan untuk keperluan akademik (Kerja Praktik).
+
+Copyright © 2026 Nabil Abdillah Supardy
