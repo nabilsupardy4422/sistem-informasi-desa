@@ -1,120 +1,93 @@
-# 🌐 SI Desa - Smart Village Ecosystem
+# SI Desa — Smart Village Ecosystem
 
-<p align="center">
-  <img src="public/logo.png" alt="SI Desa Logo" width="150">
-</p>
+Sistem Informasi Desa berbasis web untuk mendukung digitalisasi pelayanan publik dan pengelolaan informasi desa.
 
-<p align="center">
-  <b>Sistem Informasi Desa Berbasis Web</b><br>
-  Digitalisasi Pelayanan Publik Desa menggunakan Laravel
-</p>
+## Overview
 
----
+SI Desa dikembangkan sebagai project Kerja Praktik pada Dinas Komunikasi dan Informatika Kabupaten Tapanuli Tengah.
 
-## 📖 Tentang Project
+Sistem menyediakan dua area utama: layanan untuk warga dan pengelolaan administrasi melalui dashboard admin.
 
-SI Desa (Smart Village Ecosystem) merupakan aplikasi berbasis web yang dirancang untuk mendukung digitalisasi pelayanan publik di lingkungan desa. Sistem ini menyediakan layanan administrasi secara online, pengelolaan pengaduan masyarakat, transparansi APBDes, publikasi berita desa, informasi UMKM, data kependudukan, serta fitur tracking permohonan layanan.
+## Main Features
 
-Project ini dikembangkan sebagai implementasi hasil **Kerja Praktik** pada **Dinas Komunikasi dan Informatika Kabupaten Tapanuli Tengah**.
+### Warga
 
----
+- Beranda
+- Katalog layanan
+- Pengajuan permohonan layanan
+- Tracking status permohonan
+- Pengaduan masyarakat
+- Berita desa
+- Transparansi APBDes
+- Informasi kependudukan
+- Direktori UMKM
 
-## ✨ Fitur Utama
+### Admin
 
-### 👥 Sistem Warga
+- Dashboard monitoring
+- Manajemen layanan
+- Manajemen permohonan
+- Manajemen tracking
+- Manajemen pengaduan
+- Manajemen APBDes
+- Manajemen berita
+- Manajemen penduduk
+- Manajemen UMKM
+- Statistik dashboard
 
-- 🏠 Beranda
-- 📄 Katalog Layanan
-- 📝 Pengajuan Permohonan Layanan
-- 📦 Tracking Status Permohonan
-- 📢 Pengaduan Masyarakat
-- 📰 Berita Desa
-- 💰 Transparansi APBDes
-- 👨‍👩‍👧 Data Kependudukan
-- 🏪 Direktori UMKM
+## Tech Stack
 
-### 🔐 Sistem Admin
+| Layer | Technology |
+| --- | --- |
+| Backend | Laravel 12 |
+| Language | PHP 8.2+ |
+| Database | MySQL 8.x |
+| Frontend | Blade / JavaScript |
+| Styling | Tailwind CSS |
+| Charts | Chart.js |
+| Build Tool | Vite |
 
-- Dashboard Monitoring
-- Kelola Layanan
-- Kelola Permohonan
-- Kelola Tracking
-- Kelola Pengaduan
-- Kelola APBDes
-- Kelola Berita
-- Kelola Penduduk
-- Kelola UMKM
-- Statistik Dashboard
+## Project Structure
 
----
-
-## 🛠️ Tech Stack
-
-| Technology | Version |
-|------------|---------|
-| PHP | 8.2+ |
-| Laravel | 12 |
-| MySQL | 8.x |
-| Tailwind CSS | Latest |
-| JavaScript | ES6 |
-| Chart.js | Latest |
-
----
-
-## 📂 Struktur Folder
-
-```
-app/
-bootstrap/
-config/
-database/
-public/
-resources/
-routes/
-storage/
+```text
+sistem-informasi-desa/
+├── app/
+├── bootstrap/
+├── config/
+├── database/
+├── public/
+├── resources/
+├── routes/
+├── storage/
+└── tests/
 ```
 
----
+## Getting Started
 
-## 🚀 Instalasi
-
-### Clone Repository
+### 1. Clone repository
 
 ```bash
-git clone https://github.com/USERNAME/si_desa.git
+git clone https://github.com/nabilsupardy4422/sistem-informasi-desa.git
+cd sistem-informasi-desa
 ```
 
-Masuk ke folder project
-
-```bash
-cd si_desa
-```
-
-Install dependency
+### 2. Install dependencies
 
 ```bash
 composer install
-```
-
-Install Node Module
-
-```bash
 npm install
 ```
 
-Copy file environment
+### 3. Environment
 
 ```bash
 cp .env.example .env
-```
-
-Generate application key
-
-```bash
 php artisan key:generate
 ```
 
-Atur konfigurasi database pada file `.env`
+Configure the MySQL connection in `.env`.
+
+Example:
 
 ```env
 DB_DATABASE=si_desa
@@ -122,95 +95,70 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-Migrasi database
+### 4. Database
 
 ```bash
 php artisan migrate
-```
-
-Jika menggunakan seeder
-
-```bash
 php artisan db:seed
 ```
 
-Compile Asset
+### 5. Run development server
 
-```bash
-npm run dev
-```
-
-Jalankan server
+Terminal 1:
 
 ```bash
 php artisan serve
 ```
 
-Buka browser
+Terminal 2:
 
+```bash
+npm run dev
 ```
+
+Application:
+
+```text
 http://127.0.0.1:8000
 ```
 
----
+## Testing
 
-## 📸 Screenshot
+Black Box Testing digunakan untuk menguji fungsi utama sistem berdasarkan kebutuhan dan alur penggunaan.
 
-### Landing Page
+## Project Modules
 
-> Tambahkan screenshot homepage
+```text
+Public Information
+       │
+       ├── News
+       ├── Village Information
+       ├── UMKM
+       └── APBDes
 
-### Dashboard Admin
+Public Services
+       │
+       ├── Service Catalog
+       ├── Applications
+       ├── Tracking
+       └── Complaints
 
-> Tambahkan screenshot dashboard
+Administration
+       │
+       ├── Service Management
+       ├── Application Management
+       ├── Population
+       ├── UMKM
+       ├── APBDes
+       └── Dashboard
+```
 
-### Manajemen APBDes
+## Author
 
-> Tambahkan screenshot APBDes
-
-### Tracking Layanan
-
-> Tambahkan screenshot tracking
-
----
-
-## 🧪 Pengujian
-
-Metode pengujian yang digunakan adalah:
-
-- Black Box Testing
-
-Seluruh fitur utama berhasil dijalankan sesuai kebutuhan sistem.
-
----
-
-## 📚 Dokumentasi Sistem
-
-Sistem terdiri dari beberapa modul utama:
-
-- Layanan Administrasi
-- Tracking Permohonan
-- Pengaduan Masyarakat
-- APBDes
-- Berita Desa
-- Penduduk
-- UMKM
-- Dashboard Monitoring
-
----
-
-## 👨‍💻 Author
-
-**Nabil Abdillah Supardy**
-
-Program Studi Sistem Informasi
+**Nabil Adillah Supardy**
 
 Universitas Islam Negeri Imam Bonjol Padang
 
----
+## License
 
-## 📄 License
-
-Project ini dikembangkan untuk keperluan akademik (Kerja Praktik).
-
-Copyright © 2026 Nabil Abdillah Supardy
+Project ini dikembangkan untuk keperluan akademik dan Kerja Praktik.
