@@ -6,7 +6,17 @@ Sistem Informasi Desa berbasis web untuk mendukung digitalisasi pelayanan publik
 
 SI Desa dikembangkan sebagai project Kerja Praktik pada Dinas Komunikasi dan Informatika Kabupaten Tapanuli Tengah.
 
-Sistem menyediakan dua area utama: layanan untuk warga dan pengelolaan administrasi melalui dashboard admin.
+Sistem menyediakan area layanan untuk warga dan dashboard administrasi untuk membantu pengelolaan layanan serta informasi desa.
+
+## Screenshots
+
+### Halaman Beranda
+
+![SI Desa - Beranda](screenshot/beranda.png)
+
+### Dashboard Admin
+
+![SI Desa - Dashboard Admin](screenshot/dashboard.png)
 
 ## Main Features
 
@@ -58,6 +68,7 @@ sistem-informasi-desa/
 ├── public/
 ├── resources/
 ├── routes/
+├── screenshot/
 ├── storage/
 └── tests/
 ```
@@ -122,10 +133,6 @@ Application:
 http://127.0.0.1:8000
 ```
 
-## Testing
-
-Black Box Testing digunakan untuk menguji fungsi utama sistem berdasarkan kebutuhan dan alur penggunaan.
-
 ## Project Modules
 
 ```text
@@ -152,6 +159,10 @@ Administration
        ├── APBDes
        └── Dashboard
 ```
+
+## Testing
+
+Black Box Testing digunakan untuk menguji fungsi utama sistem berdasarkan kebutuhan dan alur penggunaan.
 
 ## Author
 
