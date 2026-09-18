@@ -55,7 +55,6 @@ Sistem menyediakan area layanan untuk warga dan dashboard administrasi untuk mem
 | Frontend | Blade / JavaScript |
 | Styling | Tailwind CSS |
 | Charts | Chart.js |
-| Build Tool | Vite |
 
 ## Project Structure
 
