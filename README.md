@@ -49,7 +49,7 @@ Sistem menyediakan area layanan untuk warga dan dashboard administrasi untuk mem
 
 | Layer | Technology |
 | --- | --- |
-| Backend | Laravel 12 |
+| Backend | Laravel 10 |
 | Language | PHP 8.2+ |
 | Database | MySQL 8.x |
 | Frontend | Blade / JavaScript |
